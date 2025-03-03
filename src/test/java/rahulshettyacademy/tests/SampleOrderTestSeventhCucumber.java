@@ -32,6 +32,7 @@ public class SampleOrderTestSeventhCucumber extends BaseTest{
 	@Test(dataProvider="getData", groups= {"Purchase"})
 	public void submitOrderTest(HashMap<String, String> inputHashMap) throws InterruptedException
 	{
+		System.out.println("confusing.....");
 		stremail = inputHashMap.get("email");
 		strpwd = inputHashMap.get("password");
 		strProduct = inputHashMap.get("product");
